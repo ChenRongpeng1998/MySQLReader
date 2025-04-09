@@ -31,21 +31,15 @@ uv
                 "--directory",
                 "Path\to\your\MySQLReader",
                 "run",
-                "mysql_reader.py"
+                "mysql_reader.py",
+                "host",
+                "username",
+                "password",
+                "database"
             ]
         }
     }
 }
-```
-# How to connect your mysql database
-Before running the service,modify mysql_reader.py:
-```python
-conn = mysql.connector.connect(
-host="localhost", # Modify to your own host
-user="root", #Modify to your own user
-password="123456", # Modify to your own password
-database="mysql" , # Modify to your own database
-)
 ```
 # Tool
 The server just offers querry tool `read_query`,and the tool is not described in the code
