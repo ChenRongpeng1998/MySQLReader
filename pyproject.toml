@@ -1,0 +1,12 @@
+[project]
+name = "mysqlreader"
+version = "0.0.1"
+description = "This is an MCP service used to read MySQL databases. Due to security considerations, this MCP service only provides query operations on the database and does not currently support add, delete, or modify functions."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "cryptography>=44.0.2",
+    "pymysql>=1.1.1",
+    "mcp>=1.6.0",
+    "python-dotenv>=1.1.0"
+]
